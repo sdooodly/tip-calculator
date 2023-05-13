@@ -1,98 +1,141 @@
 * {
- font-family: 'M PLUS Rounded 1c', Avenir Next, Helvetica, sans-serif;
- color: white;
+  font-family: "M PLUS Rounded 1c", Avenir Next, Helvetica, sans-serif;
+  color: rgb(0, 84, 97);
+  text-shadow: #000000;
 }
-
+html {
+  height: 100vh;
+  width: 100%;
+}
 body {
- background: yellow;
+  background: rgb(155, 232, 255);
+  margin: 0;
 }
 
 .wrapper {
- height: 525px;
- width: 360px;
- color: white;
- background: #2c2639;
- border-radius: 1rem;
- padding: 1.2rem;
- margin: 100px auto;
+  height: 525px;
+  width: 360px;
+  background: rgb(155, 232, 255);
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin: 100px auto;
 }
 
 #topContainer {
- margin-top: 4rem;
+  margin-top: 4rem;
 }
 
 .container {
- margin-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 
 .title {
- font-weight: bold;
- margin-bottom: 0.6rem;
+  font-weight: bold;
+  margin-bottom: 0.6rem;
 }
 
 .inputContainer {
- background: #353959;
- border-radius: 1.4rem;
- padding: 0 0.8rem;
- display: flex;
- align-items: center;
+  background: yellow;
+  border-radius: 1.4rem;
+  padding: 0 0.8rem;
+  display: flex;
+  align-items: center;
 }
 
 #billTotalInput,
 #tipInput {
- font-size: 1.2rem;
- background: none;
- border: none;
- outline: none;
- padding: none;
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  outline: none;
+  padding: none;
 }
 
 .buttonContainer {
- background: yellow;
- display: grid;
- place-items: center;
- width: 1.6rem;
- height: 1.6rem;
- border-radius: 50%;
+  background: yellow;
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
 }
 
 .splitButton {
- background: none;
- border: none;
+  background: none;
+  border: none;
 }
 
 .controls {
- display: flex;
- align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .splitButton {
- font-size: 0.8rem;
- font-weight: bold;
- display: grid;
- place-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: grid;
+  place-items: center;
 }
 
 .buttonText {
- color: #353959 !important;
+  color: #353959 !important;
 }
 
 .splitAmount {
- font-size: 1.6rem;
- margin: 0.8rem;
+  font-size: 1.6rem;
+  margin: 0.8rem;
 }
 
 #bottom {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .totalContainer {
- display: flex;
- flex-direction: column;
- align-items: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 
 .total {
- font-size: 2rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Adjust the styles for smaller screens */
+  .wrapper {
+    height: auto;
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .inputContainer,
+  .controls {
+    flex-direction: column;
+  }
+
+  /* Adjust the spacing */
+  .inputContainer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .controls {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Make the splitAmount font size smaller */
+  .splitAmount {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust the spacing */
+  #bottom {
+    flex-direction: column;
+  }
+
+  .totalContainer {
+    margin-top: 1rem;
+  }
 }
