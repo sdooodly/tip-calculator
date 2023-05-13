@@ -20,6 +20,11 @@ These are all the DIV ID's you're gonna need access to 👇
 // Get global access to all inputs / divs here (you'll need them later 😘)
 // bill input, tip input, number of people div, and per person total div
 
+let billTotalInput = document.getElementById('billTotalInput');
+let tipInput = document.getElementById('tipInput');
+let numberOfPeople = document.getElementById('numberOfPeople');
+let perPersonTotal = document.getElementById('perPersonTotal');
+
 
 
 // Get number of people from number of people div
